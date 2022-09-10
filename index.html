@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>My First web page</title>
+        <title>Great Cliffs of California`</title>
         <!-- Custom CSS -->
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <style>
             /* Header */
             header {
@@ -59,6 +60,78 @@
                 color: #fff;
             }
             /* Main */
+
+            /* Partners */
+            section {
+                width: 100%;
+                background-color: #4288c3;
+            }
+            section #partners {
+                width: 1200px;
+                padding: 2em 0 2em 0;
+                margin: 0 auto;
+                text-align: center;
+            }
+            section #partners .partner {
+                display: inline-block;
+                margin: 0 0.75em;
+                padding: 1.3em 1.5em;
+                background-color: #fff;
+                border-radius: 50%;
+            }
+            section #partners .partner img {
+                width: 90px;
+                height: 90px;
+            }
+
+            /* Footer */
+            footer {
+                width: 100%;
+                height: 155px;
+                padding-bottom: 1em;
+                background-color: #ecfab8;
+            }
+            footer #nondisclaimer .copy {
+                padding: 3.5em 3.5em 3.5em 13em;
+                float: left;
+                font-size: 0.9em;
+            }
+            footer #nondisclaimer .social {
+                padding: 2.5em;
+                margin-right: 9.25em;
+                float: right;
+            }
+            footer #disclaimer {
+                clear: both;
+            }
+            footer #disclaimer p {
+                font-size: 0.85em;
+                text-align: center;
+            }
+            footer #nondisclaimer .social .fa {
+                padding: 15px;
+                font-size: 15px;
+                width: 15px;
+                text-align: center;
+                text-decoration: none;
+                margin: 0 4px;
+                border-radius: 50%;
+            }
+            footer #nondisclaimer .social .fa:hover {
+                opacity: 0.7;
+            }
+            footer #nondisclaimer .social .fa-facebook {
+                background: #3b5998;
+                color: white;
+            }
+            footer #nondisclaimer .social .fa-twitter {
+                background: #55acee;
+                color: white;
+            }
+            footer #nondisclaimer .social .fa-instagram {
+                background: #125688;
+                color: white;
+            }
         </style>
     </head>
 
@@ -66,7 +139,7 @@
     <body>
         
         <!-- Container -->
-        <div id="container">
+        <div id="home">
 
             <header style="font-size: 60px; color: #fff">My web site brand</header>
 
@@ -81,10 +154,48 @@
             </nav>
 
             <main>
-                <h1>My First Heading</h1>
-                <p>My first paragraph.</p>
+                <h1 style="color:#9ed034">Introducing California's Greatest Cliffs</h1>
+                <h2>What is so unique about California Cliffs?</h2>
+                <p>California cliffs are one of a kind in the United States where no cliffs are as manificent and beautiful as them.
+                    And California is the only state that have cliffsf that fronts all possible environments: sea, river, mountains and canyons.
+                    There are four such individual unique cliffs: West Cliff, East Cliff, North Cliff, and South Cliff. 
+                    All other fantastic overlooking views, recreational areas, comping sites, wildlife watch spots and overnight cabins.
+                </p>
+                <h2>Where are these cliffs?</h2>
+                <p>Located within a 100 mile radius from Irvine, California, they can be reached by roads easily.
+                    The closest cliff to Irvine is West Cliff, which is the most popular and most visited.
+                </p>
             </main>
 
+            <section>
+                <ul id="partners">
+                    <li class="partner">
+                        <img src="./images/partners/partner-bustour.png" alt="Partner Bus Tours">
+                    </li>
+                    <li class="partner">
+                        <img src="./images/partners/partner-cabinrental.png" alt="Partner Cabin Rental">
+                    </li>
+                    <li class="partner">
+                        <img src="./images/partners/partner-campingadv.png" alt="Partner Camping Adventure">
+                    </li>
+                    <li class="partner">
+                        <img src="./images/partners/partner-collegetours.png" alt="Partner College Tours">
+                    </li>
+                    <li class="partner">
+                        <img src="./images/partners/partner-rentalbike.png" alt="Partner Bike Rentals">
+                    </li>
+                    <li class="partner">
+                        <img src="./images/partners/partner-tourgroup.png" alt="Partner Tour Group">
+                    </li>
+                </ul>
+            </section>
+
+            <footer>&copy; Copyright 2022</footer>
+            <div class="social">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-twitter"></a>
+            </div>
         </div>
     </body>
 </html>
